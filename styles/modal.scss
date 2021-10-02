@@ -1,0 +1,72 @@
+@import './config.scss';
+
+.container-modal{
+    margin-top: 150px;
+
+    button {
+        width: 40%;
+        height: 50px;
+        background-color: $primaryColor;
+        border: none;
+        color: white;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+
+    p {
+        text-align: center;
+        color: $primaryColor;
+        font-size: 17px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input {
+        border-width: 0.5px;
+        border-color: $mediumGrayColor;
+        border-radius: 8px;
+        padding: 10px;
+        height: 50px;
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .error{
+        color: $errorColor;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            margin-left: 30px;
+            color: $primaryColor;
+            font-size: 15px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+
+    @media screen and (min-width:1024px) {
+        
+    }
+}

@@ -1,0 +1,58 @@
+@import './config.scss';
+
+.container-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+    background-color: $lightGrayColor;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 55px;
+
+    img {
+        width: 18px;
+        margin-right: 15px;
+    }
+
+    div{
+        p{
+            margin: 0px;
+            color: $darkGrayColor;
+            font-weight: bold;
+            font-size: 15px;
+
+            &.concluido {
+                text-decoration: line-through;
+            }
+
+        }
+
+        span {
+            color: $darkGrayColor;
+            font-weight: normal;
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        height: 70px;
+        padding: 20px;
+
+        img {
+            width: 20px;
+        }
+
+        &.ativo {
+            cursor: pointer;
+
+            &:hover {
+                border-color: $primaryColor;
+                border-style: solid;
+                border-width: 1px;
+            }
+        }
+    }
+}

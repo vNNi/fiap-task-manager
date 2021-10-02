@@ -1,0 +1,97 @@
+@import './config.scss';
+
+.container-filtros{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background-color: $lightGrayColor;
+    border-radius: 12px;
+    padding: 10px;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 18px;
+            letter-spacing: 0.01em;
+            color: $primaryColor;
+            font-weight: bold;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .form {
+            display: none;
+        }
+    }
+
+    .filtrosMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 8px;
+
+            label {
+                color: $primaryColor;
+                font-size: 16px;
+                min-width: 110px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        padding: 20px;
+
+        .title {
+            img {
+                display: none;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                label {
+                    color: $primaryColor;
+                    font-size: 16px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    margin-bottom: 0px;
+                }
+
+                input, select {
+                    border-color: $primaryColor;
+                }
+
+                .line {
+                    border-color: $primaryColor;
+                    border-width: 1px;
+                    border-style: solid;
+                    height: 40px;
+                    width: 0px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .filtrosMobile {
+            display: none;
+        }
+    }
+}
