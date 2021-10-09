@@ -1,14 +1,17 @@
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { executeRequest } from "../services/api";
 import { AccessTokenProps } from "../types/AccessTokenProps";
 
 const Login: NextPage<AccessTokenProps> = ({ setAccessToken }) => {
-  const [login, setLogin] = useState("");
+  const [login, setLogin] = useState(localStorage.getItem("userEmail") || "");
   const [password, setPassword] = useState("");
   const [msgError, setMsgError] = useState("");
   const [passwordView, setPasswordView] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const route = useRouter();
 
   const doLogin = async (e: any) => {
     try {
@@ -49,8 +52,12 @@ const Login: NextPage<AccessTokenProps> = ({ setAccessToken }) => {
     setLoading(false);
   };
 
+  const routePush = () => {
+    route.push('/registry')
+  };
+
   return (
-    <div className="container-login">
+    <div className="container-form">
       <img src="/logo.svg" alt="logo fiap" className="logo" />
       <form action="">
         {msgError && <p>{msgError}</p>}
@@ -75,6 +82,7 @@ const Login: NextPage<AccessTokenProps> = ({ setAccessToken }) => {
         <button type="submit" onClick={doLogin} disabled={loading}>
           {loading ? "Carregando..." : "Login"}
         </button>
+        <p className="registry-link" onClick={routePush}>Ainda nao tem conta? Cadastra-se aqui !</p>
       </form>
     </div>
   );

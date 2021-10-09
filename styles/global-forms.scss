@@ -1,6 +1,6 @@
 @import "./config.scss";
 
-.container-login {
+.container-form {
   .logo {
     width: 178.35px;
     display: block;
@@ -9,9 +9,20 @@
 
   p {
       text-align: center;
-      color: $errorColor;
+      color: $darkGrayColor;
       font-weight: bold;
       max-width: 300px;
+
+      &.success {
+        color: green;
+      }
+
+      &.error {
+        color: $errorColor;
+      }
+      &.clickable {
+        cursor: pointer;
+      }
   }
 
   .input {
@@ -55,6 +66,13 @@
         color: $mediumGrayColor;
       }
     }
+
+  }
+
+  .showPassword {
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
   }
 
   button {
@@ -106,5 +124,11 @@
         }
       }
     }
+  }
+
+  .registry-link {
+    margin: 1em 0;
+    color: $primaryColor;
+    cursor: pointer;
   }
 }
