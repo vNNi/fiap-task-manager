@@ -1,4 +1,4 @@
-# Task Manager - Fiap - Vinícius Komninakis - AOJ78
+# Task Manager - Fiap - Vinícius Komninakis - 78AOJ
 
 > Projeto feito durante as aulas de Front-end e UX, para gerenciamento de tarefas, contendo login, cadastramento, criação de tarefas, edição, conclusão e remoção, junto de filtragem.
 
