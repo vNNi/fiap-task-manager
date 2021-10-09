@@ -37,3 +37,9 @@
 <p align="center">
   <img src="./docs/tarefas-home.png" />
 </p>
+
+### Video de cadastramento !!!!
+
+<p align="center">
+  <img src="./docs/cadastro-video.gif" />
+</p>
