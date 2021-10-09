@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task Manager - Fiap - Vinícius Komninakis - AOJ78
 
-## Getting Started
+> Projeto feito durante as aulas de Front-end e UX, para gerenciamento de tarefas, contendo login, cadastramento, criação de tarefas, edição, conclusão e remoção, junto de filtragem.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Pré requesitos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. ⚙️ - Nodejs >= 14.15.0.
+2. 🗄️ - MongoDB.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+É preciso também adicionar as variáveis de ambiente no arquivo `.env`, consultar `.env.example` para ver quais são necessárias.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Rodando
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. `npm i`.
+2. `npm run dev`.
 
-## Learn More
+## Imagens
 
-To learn more about Next.js, take a look at the following resources:
+> Algumas imagens demonstrativas de como ficou o projeto finalizado
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tela de login:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="center">
+  <img src="./docs/login.png" />
+</p>
 
-## Deploy on Vercel
+### Tela de cadastro:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="center">
+  <img src="./docs/cadastro.png" />
+</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Tela de tarefas:
+
+<p align="center">
+  <img src="./docs/tarefas-home.png" />
+</p>
+
+### Video de cadastramento !!!!
+
+<p align="center">
+  <img src="./docs/cadastro-video.gif" />
+</p>

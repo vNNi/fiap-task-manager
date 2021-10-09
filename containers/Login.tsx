@@ -5,7 +5,7 @@ import { executeRequest } from "../services/api";
 import { AccessTokenProps } from "../types/AccessTokenProps";
 
 const Login: NextPage<AccessTokenProps> = ({ setAccessToken }) => {
-  const [login, setLogin] = useState(localStorage.getItem("userEmail") || "");
+  const [login, setLogin] = useState(typeof window !=='undefined' && localStorage?.getItem("userEmail") || "");
   const [password, setPassword] = useState("");
   const [msgError, setMsgError] = useState("");
   const [passwordView, setPasswordView] = useState(false);

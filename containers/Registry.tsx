@@ -101,6 +101,7 @@ const Registry: NextPage<AccessTokenProps> = ({ setAccessToken }) => {
         <button type="submit" onClick={doRegistry} disabled={loading}>
           {loading ? "Carregando..." : "Cadastrar"}
         </button>
+        <p className="registry-link" onClick={backToLogin}>Já possui cadastro? efetue o login!</p>
       </form>
     </div>
   );
