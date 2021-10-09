@@ -57,7 +57,7 @@ const Login: NextPage<AccessTokenProps> = ({ setAccessToken }) => {
   };
 
   return (
-    <div className="container-login">
+    <div className="container-form">
       <img src="/logo.svg" alt="logo fiap" className="logo" />
       <form action="">
         {msgError && <p>{msgError}</p>}
